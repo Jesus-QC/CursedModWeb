@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - CursedMod</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="nav-content">
+            <div class="nav-logo">
+                <a href="/"><img src="https://cdn.discordapp.com/icons/1062071403962183781/67c7b1091ec3d55d5dedf578ca8fc22d.webp?size=4096" alt="Icon"/></a>
+            </div>
+            <div class="nav-items">
+                <ul>
+                    <li><a href="/plugins">Plugins</a></li>
+                    <li><a href="https://docs.cursedsl.com/">Docs</a></li>
+                    <li><a href="https://github.com/Jesus-QC/CursedMod">GitHub</a></li>
+                    <li><a href="https://discord.gg/pqgQ5yeWU7">Discord</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+@RenderBody()
+
+<svg class="wave-separator" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 400" preserveAspectRatio="none">
+    <path d="M0,256L80,256C160,256,320,256,480,224C640,192,800,128,960,133.3C1120,139,1280,213,1360,250.7L1440,288L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z" class="accent-path"></path>
+    <path d="M0,160L40,133.3C80,107,160,53,240,64C320,75,400,149,480,202.7C560,256,640,288,720,293.3C800,299,880,277,960,256C1040,235,1120,213,1200,208C1280,203,1360,213,1400,218.7L1440,224L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z" class="accent-path"></path>
+    <path d="M0,96L80,122.7C160,149,320,203,480,192C640,181,800,107,960,80C1120,53,1280,75,1360,85.3L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z" class="main-path"></path>
+</svg>
+
+<div class="footer-start">
+    <h1>Download <span class="color-effect">CursedMod</span></h1>
+    <span class="footer-start-t">Or view the project on GitHub.</span>
+    <div style="display: flex;flex-direction: row;gap: 1em;flex-wrap: wrap;" class="footer-bottom">
+        <a href="https://docs.cursedsl.com/hosting/installation" type="button" class="btn btn-primary">Download</a>
+        <a href="https://github.com/Jesus-QC/CursedMod" type="button" class="btn btn-secondary">GitHub</a>
+    </div>
+</div>
+
+<footer>
+    <span>&copy; @DateTime.Today.Year - CursedMod</span>
+    <span>Made with love by <a href="https://jesusqc.es" style="color: var(--accent)">@@jesusqc</a></span>
+</footer>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

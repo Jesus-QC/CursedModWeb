@@ -1,0 +1,26 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<main>
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Download <span class="color-effect">CursedMod</span><br>Efficient, Stable, Dynamic...</h1>
+            <p>Tired of boring and useless frameworks?<br/>CursedMod has everything you are looking for.</p>
+            <div style="display: flex;flex-direction: row;gap: 1em;flex-wrap: wrap;">
+                <a href="https://docs.cursedsl.com/hosting/installation" type="button" class="btn btn-primary">Get Started</a>
+                <a href="https://discord.gg/pqgQ5yeWU7" type="button" class="btn btn-secondary">I need help!</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <div style="height: 652px;">
+                <video id="vid" loop autoplay muted height="100%" width="100%" style="object-fit: cover;border-radius: 10px">
+                    <source src="~/img/vid.mp4" type="video/mp4">
+                    What browser are you even using. It doesn't accept videos.
+                </video>
+            </div>
+        </div>
+    </div>
+</main>
